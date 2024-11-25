@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Welcome to the Data Collection Page</h1>
+
+        <p class="lead">Here is the data you want to collect:</p>
+        <ul>
+            <li><strong>Amount</strong> - Money you spended on things like Entertainment, Travel, Food, Education, etc.</li>
+            <li><strong>Income</strong> - Your monthly income.</li>
+            <li><strong>Monthly Expenses</strong> - Your monthly expenses.</li>
+            <li><strong>Loan Payments</strong> - Your monthly loan payments.</li>
+            <li><strong>Credit Card Spending</strong> - Your monthly credit card spending.</li>
+            <li><strong>Family ID</strong> - Your unique family identifier.</li>
+            <li><strong>Member ID</strong> - The member's identifier within the family.</li>
+            <li><strong>Savings</strong> - Your available savings amount.</li>
+        </ul>
+
+        <p><a href="{{ url_for('add_data') }}" class="btn btn-success">Add Data</a></p>
+
+        <!-- Button to navigate to the view data page -->
+        <p><a href="{{ url_for('view_data') }}" class="btn btn-primary">View Data</a></p>
+
+        {% if message %}
+        <div class="alert alert-success mt-4" role="alert">
+            {{ message }}
+        </div>
+        {% endif %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
