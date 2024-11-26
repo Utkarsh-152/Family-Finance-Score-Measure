@@ -60,6 +60,7 @@ The model calculates five primary metrics:
 5. **Spending Category Balance**:
    - Penalizes excessive discretionary spending (e.g., on entertainment, travel, food) relative to total spending.
    - **Formula**:
+     
      $$ \text{Penalty} = \max \left( 0, \left( 1 - \frac{\text{Discretionary Spending}}{\text{Total Spending}} \right) \times 100 \right) $$
 
 
