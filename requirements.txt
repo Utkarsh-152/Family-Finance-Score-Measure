@@ -1,0 +1,6 @@
+Flask
+Pandas
+Plotly
+Seaborn
+Matplotlib
+OpenPyXL
