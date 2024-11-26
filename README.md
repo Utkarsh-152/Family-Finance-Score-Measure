@@ -38,3 +38,56 @@ The application also provides an interface to view saved data and financial scor
    ```bash
    git clone https://github.com/your-repo/family-financial-score.git
    cd family-financial-score
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+3. Run the Flask application:
+   ```bash
+   python app.py
+
+4. Open your browser and navigate to http://127.0.0.1:5000/.
+
+## Usage
+**Home Page**
+   - Welcome Screen: Provides an overview of the application.
+   - Navigate to:
+      - Add Data: Input financial details.
+      - View Data: View stored financial scores and recommendations.
+**Add Data**
+   - Enter the required fields:
+      - Family ID
+      - Member ID
+      - Spending Category
+      - Amount
+      - Income
+      - Monthly Expenses
+      - Loan Payments
+      - Credit Card Spending
+      - Savings
+   - Submit to calculate scores and save data.
+**View Data**
+   - Displays stored financial data in a tabular format with calculated scores and recommendations.
+
+## How It Works
+
+1. Data Input:
+   - Users enter financial data through the form on the "Add Data" page.
+2. Score Calculation:
+   - Metrics like Savings-to-Income and Expenses-to-Income are calculated.
+   - A weighted financial score is derived.
+   - Recommendations are generated based on the score.
+3. Data Storage:
+   - The input data, along with scores and recommendations, are saved to an Excel file.
+4. Data Viewing:
+   - Saved data is displayed in a table format on the "View Data" page.
+
+   
+## Dependencies
+   - Python 3.7+
+   - Flask
+   - Pandas
+   - OpenPyXL (for Excel file handling)
+   - Bootstrap (for frontend styling)
+
