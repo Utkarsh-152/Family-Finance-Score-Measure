@@ -228,13 +228,17 @@ Before using this app, ensure that you have the following:
 
 You need to install the required dependencies for Streamlit and Plotly.
 
-#### Install Dependencies ```bash
-      pip install streamlit plotly pandas openpyxl
+#### Install Dependencies 
+
+   ```bash
+   pip install streamlit plotly pandas openpyxl
 
 ### Running the App
 
-#### Start the Streamlit App ```bash
-      streamlit run streamlit_app.py
+#### Start the Streamlit App
+
+   ```bash
+   streamlit run streamlit_app.py
 
 #### Open the App
 - After running the command, you will see a URL in the terminal, typically http://localhost:8501.
