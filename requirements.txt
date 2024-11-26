@@ -1,6 +1,7 @@
 Flask
-Pandas
-Plotly
-Seaborn
-Matplotlib
+pandas
+plotly
+seaborn
+matplotlib
 OpenPyXL
+streamlit
