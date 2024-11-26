@@ -80,9 +80,9 @@ The **financial score** is a weighted combination of the above metrics. Each met
 
 **Formula:**
 
-\[
+\
 \text{Final Score} = (\text{Savings-to-Income Score} \times 0.30) + (\text{Expenses-to-Income Score} \times 0.25) + (\text{Loan-to-Income Score} \times 0.20) + (\text{Credit Card Score} \times 0.15) + (\text{Category Penalty} \times 0.10)
-\]
+\
 
 
 ---
