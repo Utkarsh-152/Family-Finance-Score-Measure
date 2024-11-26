@@ -269,7 +269,7 @@ The app has a sidebar with two main options:
 This project is licensed under the MIT License.
 
 ## Acknowledgments
-**Streamlit** for the easy-to-use web app framework.
-**Plotly** for interactive visualizations.
-**Pandas** for handling data and calculations.
-**OpenPyXL** for reading and writing Excel files.
+1. **Streamlit** for the easy-to-use web app framework.
+2. **Plotly** for interactive visualizations.
+3. **Pandas** for handling data and calculations.
+4. **OpenPyXL** for reading and writing Excel files.
