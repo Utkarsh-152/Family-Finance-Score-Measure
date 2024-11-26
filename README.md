@@ -264,3 +264,12 @@ The app has a sidebar with two main options:
 #### Recommendations
 1. Based on the new financial score, the app will generate and display recommendations to help improve the score further. For example:
    - "Reduce discretionary spending by 10% to improve your score by X points."
+
+## License
+This project is licensed under the MIT License.
+
+## Acknowledgments
+**Streamlit** for the easy-to-use web app framework.
+**Plotly** for interactive visualizations.
+**Pandas** for handling data and calculations.
+**OpenPyXL** for reading and writing Excel files.
