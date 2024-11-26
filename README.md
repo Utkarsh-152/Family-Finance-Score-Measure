@@ -31,14 +31,14 @@ The application also provides an interface to view saved data and financial scor
    - Bootstrap for responsive design.
 
 ---
-# Explanation of Model Logic
+## Explanation of Model Logic
 
-## Overview
+### Overview
 This Python script calculates **financial scores** for families and provides recommendations to improve their financial health. It evaluates savings, expenses, loans, credit card spending, and spending habits across discretionary categories.
 
 ---
 
-## Key Metrics
+### Key Metrics
 The model calculates five primary metrics:
 
 1. **Savings-to-Income**:
@@ -66,7 +66,7 @@ The model calculates five primary metrics:
 
 ---
 
-## Final Financial Score
+### Final Financial Score
 The **financial score** is a weighted combination of the above metrics. Each metric is weighted based on its importance:
 
 | Metric                    | Weight |
@@ -84,10 +84,10 @@ The **financial score** is a weighted combination of the above metrics. Each met
 
 ---
 
-## Recommendations
+### Recommendations
 Based on the **financial score** and metric thresholds, the model categorizes financial health and generates recommendations:
 
-### Score Categories
+#### Score Categories
 | Financial Score Range | Category   |
 |-----------------------|------------|
 | ≥ 70                 | Excellent  |
@@ -95,7 +95,7 @@ Based on the **financial score** and metric thresholds, the model categorizes fi
 | 30–49                | Average    |
 | < 30                 | Poor       |
 
-### Specific Recommendations
+#### Specific Recommendations
 - **Savings-to-Income**: Suggests increasing savings if less than 40% of income.
 - **Expenses-to-Income**: Advises reducing expenses to below 40% of income.
 - **Loan-to-Income**: Recommends lowering loans to below 20% of income.
@@ -104,7 +104,7 @@ Based on the **financial score** and metric thresholds, the model categorizes fi
 
 ---
 
-## Data Processing
+### Data Processing
 1. **Input Data**:
    - Family financial data grouped by `Family_ID` and `Member_ID`.
    - Includes `Income`, `Savings`, `Monthly_Expenses`, `Loan_Payments`, `Credit_Card_Spending`, and spending by `Category`.
@@ -125,7 +125,7 @@ Based on the **financial score** and metric thresholds, the model categorizes fi
 
 ---
 
-## Benefits
+### Benefits
 1. **Comprehensive Analysis**: Evaluates financial health across multiple aspects.
 2. **Custom Recommendations**: Provides actionable suggestions for improvement.
 3. **Automated Reporting**: Supports ongoing financial tracking and reporting.
@@ -191,4 +191,45 @@ Based on the **financial score** and metric thresholds, the model categorizes fi
    - Pandas
    - OpenPyXL (for Excel file handling)
    - Bootstrap (for frontend styling)
+
+---
+
+# Streamlit Financial Score Dashboard
+
+This is a simple Streamlit app that allows you to interact with the financial scoring model, simulate changes in financial data, and view personalized recommendations for improving your financial score. The app provides a visual interface where you can:
+
+- View stored financial data and scores.
+- Simulate changes such as increasing savings or reducing expenses.
+- View recommendations on how to improve your financial score.
+
+## Features
+
+1. **View Data**:
+    - Displays the stored financial data in a tabular format.
+    - Shows a bar chart visualizing the financial scores of each family.
+
+2. **Simulate Changes**:
+    - Lets users simulate changes in their financial data (e.g., increase savings, reduce expenses, etc.).
+    - Recalculates and displays the new financial score after the simulated changes.
+    - Shows the improvement in the financial score based on the applied changes.
+
+3. **Personalized Recommendations**:
+    - Provides tailored recommendations for improving the financial score, such as reducing discretionary spending or increasing savings.
+
+## Prerequisites
+
+Before using this app, ensure that you have the following:
+
+- **Streamlit** for the web interface.
+- **Plotly** for data visualization.
+- An existing Excel file (`family_financial_score.xlsx`) with the stored financial data. If no data is available, you can add data via the Flask app first.
+
+## Requirements
+
+You need to install the required dependencies for Streamlit and Plotly.
+
+### Install Dependencies
+```bash
+pip install streamlit plotly pandas openpyxl
+
 
