@@ -36,8 +36,8 @@ The application also provides an interface to view saved data and financial scor
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/family-financial-score.git
-   cd family-financial-score
+   git clone https://github.com/Utkarsh-152/Family-Finance-Score-Measure.git
+   cd Family-Finance-Score-Measure
 
 2. Install dependencies:
    ```bash
