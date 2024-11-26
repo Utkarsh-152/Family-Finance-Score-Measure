@@ -194,7 +194,7 @@ Based on the **financial score** and metric thresholds, the model categorizes fi
 
 ---
 
-# Streamlit Financial Score Dashboard
+## Streamlit Financial Score Dashboard
 
 This is a simple Streamlit app that allows you to interact with the financial scoring model, simulate changes in financial data, and view personalized recommendations for improving your financial score. The app provides a visual interface where you can:
 
@@ -202,7 +202,7 @@ This is a simple Streamlit app that allows you to interact with the financial sc
 - Simulate changes such as increasing savings or reducing expenses.
 - View recommendations on how to improve your financial score.
 
-## Features
+### Features
 
 1. **View Data**:
     - Displays the stored financial data in a tabular format.
@@ -216,7 +216,7 @@ This is a simple Streamlit app that allows you to interact with the financial sc
 3. **Personalized Recommendations**:
     - Provides tailored recommendations for improving the financial score, such as reducing discretionary spending or increasing savings.
 
-## Prerequisites
+### Prerequisites
 
 Before using this app, ensure that you have the following:
 
@@ -224,44 +224,41 @@ Before using this app, ensure that you have the following:
 - **Plotly** for data visualization.
 - An existing Excel file (`family_financial_score.xlsx`) with the stored financial data. If no data is available, you can add data via the Flask app first.
 
-## Requirements
+### Requirements
 
 You need to install the required dependencies for Streamlit and Plotly.
 
-### Install Dependencies
-      ```bash
+#### Install Dependencies ```bash
       pip install streamlit plotly pandas openpyxl
 
-## Running the App
+### Running the App
 
-### Start the Streamlit App
-
-      ```bash
+#### Start the Streamlit App ```bash
       streamlit run streamlit_app.py
 
-### Open the App
+#### Open the App
 - After running the command, you will see a URL in the terminal, typically http://localhost:8501.
 - Open your web browser and navigate to this URL to access the app.
 
-## App Layout
-### Sidebar
+### App Layout
+#### Sidebar
 The app has a sidebar with two main options:
 - **View Data**: Displays the stored financial data and a bar chart of financial scores.
 - **Simulate Changes**: Allows users to simulate changes like increasing savings or reducing expenses and see how these changes impact the financial score.
-### Main Area
+#### Main Area
 - **View Data**: Displays a table with the stored financial data and a bar chart visualizing the financial scores of families.
 - **Simulate Changes**: Allows users to input percentages for increasing savings, reducing expenses, and reducing credit card spending. After applying these changes, it will calculate and display the new financial score and provide recommendations on how to improve financial health.
 
 ---
 
-## How It Works
+### How It Works
 
-### Data Viewing
+#### Data Viewing
 1. When you select the View Data option, the app loads and displays the financial data stored in the family_financial_score.xlsx file.
 2. It also generates a bar chart that visualizes the financial scores of different families.
-### Simulating Financial Changes
+#### Simulating Financial Changes
 1. The Simulate Changes option lets you adjust various financial metrics (e.g., increase savings, reduce monthly expenses).
 2. The app will recalculate the financial score based on these changes and show how the score improves.
-### Recommendations
+#### Recommendations
 1. Based on the new financial score, the app will generate and display recommendations to help improve the score further. For example:
    - "Reduce discretionary spending by 10% to improve your score by X points."
