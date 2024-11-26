@@ -229,7 +229,39 @@ Before using this app, ensure that you have the following:
 You need to install the required dependencies for Streamlit and Plotly.
 
 ### Install Dependencies
-```bash
-pip install streamlit plotly pandas openpyxl
+      ```bash
+      pip install streamlit plotly pandas openpyxl
 
+## Running the App
 
+### Start the Streamlit App
+
+      ```bash
+      streamlit run streamlit_app.py
+
+### Open the App
+- After running the command, you will see a URL in the terminal, typically http://localhost:8501.
+- Open your web browser and navigate to this URL to access the app.
+
+## App Layout
+### Sidebar
+The app has a sidebar with two main options:
+- **View Data**: Displays the stored financial data and a bar chart of financial scores.
+- **Simulate Changes**: Allows users to simulate changes like increasing savings or reducing expenses and see how these changes impact the financial score.
+### Main Area
+- **View Data**: Displays a table with the stored financial data and a bar chart visualizing the financial scores of families.
+- **Simulate Changes**: Allows users to input percentages for increasing savings, reducing expenses, and reducing credit card spending. After applying these changes, it will calculate and display the new financial score and provide recommendations on how to improve financial health.
+
+---
+
+## How It Works
+
+### Data Viewing
+1. When you select the View Data option, the app loads and displays the financial data stored in the family_financial_score.xlsx file.
+2. It also generates a bar chart that visualizes the financial scores of different families.
+### Simulating Financial Changes
+1. The Simulate Changes option lets you adjust various financial metrics (e.g., increase savings, reduce monthly expenses).
+2. The app will recalculate the financial score based on these changes and show how the score improves.
+### Recommendations
+1. Based on the new financial score, the app will generate and display recommendations to help improve the score further. For example:
+   - "Reduce discretionary spending by 10% to improve your score by X points."
