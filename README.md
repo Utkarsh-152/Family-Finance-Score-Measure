@@ -59,10 +59,11 @@ The model calculates five primary metrics:
 
 5. **Spending Category Balance**:
    - Penalizes excessive discretionary spending (e.g., on entertainment, travel, food) relative to total spending.
-   - Formula:
+   - **Formula**:
      \[
-     \text{Penalty} = \max(0, (1 - \frac{\text{Discretionary Spending}}{\text{Total Spending}}) \times 100)
+     \text{Penalty} = \max(0, \left(1 - \frac{\text{Discretionary Spending}}{\text{Total Spending}}\right) \times 100)
      \]
+
 
 ---
 
@@ -77,10 +78,12 @@ The **financial score** is a weighted combination of the above metrics. Each met
 | Credit Card Spending      | 0.15   |
 | Spending Category Balance | 0.10   |
 
-**Formula**:
+**Formula:**
+
 \[
 \text{Final Score} = (\text{Savings-to-Income Score} \times 0.30) + (\text{Expenses-to-Income Score} \times 0.25) + (\text{Loan-to-Income Score} \times 0.20) + (\text{Credit Card Score} \times 0.15) + (\text{Category Penalty} \times 0.10)
 \]
+
 
 ---
 
